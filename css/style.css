@@ -860,3 +860,49 @@ form{
   
 }
 
+#author{
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  ;
+}
+
+#imgAuth{
+  width: 45%;
+
+}
+
+#imgAuth img{
+  width: 100%;
+  
+}
+
+#infoAuth{
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#infoAuth p{
+  font-size: 25px;
+  font-family: 'Gabarito';
+}
+
+@media only screen and (max-width: 767px){
+  #author{
+    flex-direction: column;
+    
+  }
+  #imgAuth{
+    width: 100%;
+  }
+  #infoAuth{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+}
