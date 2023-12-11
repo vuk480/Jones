@@ -129,7 +129,7 @@ function validatePassword() {
     passwordValidationMessage.textContent = 'Password must be filled out';
   }
   else  if(!passreg.test(passwordInput.value)){
-    passwordValidationMessage.textContent = 'Must contain at least 1 uppercase, 1 number . Example: Password1';
+    passwordValidationMessage.textContent = 'Must contain at least 8 characters, 1 uppercase letter, 1 number . Example: Password1';
   }
   
 
