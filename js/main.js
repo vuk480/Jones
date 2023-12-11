@@ -103,7 +103,7 @@ function validateForm() {
 function validateName() {
   var nameInput = document.getElementById('nameInput');
   var nameValidationMessage = document.getElementById('nameValidationMessage');
-  var namePattern = /^[A-Z][a-z]+\s[A-Z][a-z]+$/;
+  var namePattern = /^[A-ZŠĐŽČĆ][a-zšđčćž]+\s[A-Z][a-zšđčćž]+$/;
   if (nameInput.value==='') {
     nameValidationMessage.textContent = 'Name must be filled out';
   }
@@ -129,7 +129,7 @@ function validatePassword() {
     passwordValidationMessage.textContent = 'Password must be filled out';
   }
   else  if(!passreg.test(passwordInput.value)){
-    passwordValidationMessage.textContent = 'Wrong Input. Example: Password1';
+    passwordValidationMessage.textContent = 'Must contain at least 1 uppercase, 1 number . Example: Password1';
   }
   
 
@@ -165,7 +165,7 @@ function validateCheckbox() {
   var checkboxValidationMessage = document.getElementById('checkboxValidationMessage');
 
   if (checkbox.checked) {
-      checkboxValidationMessage.textContent = 'Checkbox is checked!';
+      checkboxValidationMessage.textContent = '';
       checkboxValidationMessage.style.color = 'green';
       return true;
   } else {
